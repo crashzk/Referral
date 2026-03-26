@@ -1,0 +1,15 @@
+{
+    "name": "Referral",
+    "version": "1.0.0",
+    "description": "Referral system module with rewards and statistics",
+    "authors": [
+        "Flames"
+    ],
+    "providers": [
+        "Flute\\Modules\\Referral\\Providers\\ReferralProvider"
+    ],
+    "dependencies": {
+        "flute": ">=1.0.0"
+    }
+}
+

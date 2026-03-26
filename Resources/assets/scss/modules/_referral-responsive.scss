@@ -1,0 +1,98 @@
+@media (max-width: 1024px) {
+    .referral-content {
+        grid-template-columns: 1fr;
+    }
+
+    .referral-sidebar {
+        order: -1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .referral-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .referral-hero {
+        padding: 48px 0 32px;
+    }
+
+    .referral-hero__title {
+        font-size: 1.75rem;
+    }
+
+    .referral-hero__subtitle {
+        font-size: 1rem;
+    }
+
+    .referral-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .referral-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .referral-link-input {
+        flex-direction: column;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .referral-link-copy {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .referral-stat-card {
+        padding: 16px;
+    }
+
+    .referral-stat-card__icon {
+        width: 42px;
+        height: 42px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .referral-stat-card__value {
+        font-size: 20px;
+    }
+
+    .referral-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .referral-list-item__status {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .referral-hero__badge {
+        padding: 6px 12px;
+
+        span {
+            font-size: 11px;
+        }
+    }
+
+    .referral-link-card__header,
+    .referral-link-card__body {
+        padding: 16px;
+    }
+
+    .referral-how-card {
+        padding: 16px;
+    }
+}

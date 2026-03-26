@@ -1,0 +1,73 @@
+.referral-page {
+    min-height: calc(100vh - 80px);
+    padding-bottom: 60px;
+}
+
+.referral-hero {
+    position: relative;
+    padding: 64px 0 48px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.referral-hero__glow {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(ellipse at center, var(--accent-alpha-1) 0%, transparent 70%);
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.referral-hero__content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.referral-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: var(--accent-alpha-1);
+    border: 1px solid var(--accent-alpha-2);
+    border-radius: 24px;
+    margin-bottom: 20px;
+
+    svg {
+        width: 16px;
+        height: 16px;
+        color: var(--accent);
+    }
+
+    span {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+}
+
+.referral-hero__title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin-bottom: 12px;
+}
+
+.referral-hero__subtitle {
+    font-size: 1.0625rem;
+    color: var(--text-400);
+    line-height: 1.6;
+    max-width: 480px;
+    margin: 0 auto;
+}

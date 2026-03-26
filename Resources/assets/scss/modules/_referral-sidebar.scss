@@ -1,0 +1,124 @@
+.referral-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.referral-info-card {
+    @extend .blur-bg;
+    background: var(--blurred-background);
+    border: 1px solid var(--transp-1);
+    border-radius: var(--ref-radius-lg);
+    overflow: hidden;
+}
+
+.referral-info-card__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--transp-05);
+
+    svg {
+        width: 20px;
+        height: 20px;
+        color: var(--accent);
+    }
+
+    h3 {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--text);
+        margin: 0;
+    }
+}
+
+.referral-info-card__body {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.referral-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    > svg {
+        width: 20px;
+        height: 20px;
+        color: var(--accent);
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        strong {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-400);
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+        }
+    }
+}
+
+.referral-how-card {
+    @extend .blur-bg;
+    background: var(--blurred-background);
+    border: 1px solid var(--transp-1);
+    border-radius: var(--ref-radius-lg);
+    padding: 20px;
+
+    h3 {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--text);
+        margin: 0 0 16px;
+    }
+}
+
+.referral-how-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+
+        span:last-child {
+            font-size: 14px;
+            color: var(--text-300);
+            line-height: 1.5;
+            padding-top: 2px;
+        }
+    }
+}
+
+.referral-how-step {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent);
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    flex-shrink: 0;
+}

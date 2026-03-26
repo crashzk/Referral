@@ -1,0 +1,81 @@
+.referral-list {
+    @extend .blur-bg;
+    
+    background: var(--blurred-background);
+    border: 1px solid var(--transp-1);
+    border-radius: var(--ref-radius-lg);
+    overflow: hidden;
+}
+
+.referral-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--transp-05);
+    transition: background var(--ref-transition-fast);
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        background: var(--transp-05);
+    }
+}
+
+.referral-list-item__user {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.referral-list-item__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--transp-1);
+}
+
+.referral-list-item__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.referral-list-item__name {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.referral-list-item__date {
+    font-size: 13px;
+    color: var(--text-400);
+}
+
+.referral-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+
+    svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    &--success {
+        background: var(--ref-success-bg);
+        color: var(--ref-success);
+    }
+
+    &--pending {
+        background: var(--ref-warning-bg);
+        color: var(--ref-warning);
+    }
+}

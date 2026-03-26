@@ -1,0 +1,140 @@
+.referral-content {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.referral-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.referral-section-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+.referral-link-card {
+    background: var(--block);
+    border: 1px solid var(--transp-1);
+    border-radius: var(--ref-radius-lg);
+    overflow: hidden;
+}
+
+.referral-link-card__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--transp-05);
+
+    svg {
+        width: 22px;
+        height: 22px;
+        color: var(--accent);
+    }
+
+    h2 {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--text);
+        margin: 0;
+    }
+}
+
+.referral-link-card__body {
+    padding: 20px 24px;
+}
+
+.referral-link-input {
+    display: flex;
+    gap: 12px;
+
+    input {
+        flex: 1;
+        padding: 14px 18px;
+        background: var(--transp-05);
+        border: 1px solid var(--transp-1);
+        border-radius: var(--ref-radius-md);
+        font-size: 14px;
+        font-family: 'SF Mono', 'Fira Code', monospace;
+        color: var(--text);
+        cursor: text;
+        transition: all var(--ref-transition-fast);
+
+        &:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: var(--block);
+        }
+    }
+}
+
+.referral-link-copy {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 20px;
+    background: var(--accent);
+    border: none;
+    border-radius: var(--ref-radius-md);
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: all var(--ref-transition-fast);
+    white-space: nowrap;
+
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    &:hover {
+        background: var(--accent-500);
+        transform: translateY(-1px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+
+    &--success {
+        background: var(--ref-success);
+
+        &:hover {
+            background: var(--ref-success);
+        }
+    }
+}
+
+.referral-link-code {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--transp-05);
+}
+
+.referral-link-code__label {
+    font-size: 13px;
+    color: var(--text-400);
+}
+
+.referral-link-code__value {
+    padding: 6px 12px;
+    background: var(--transp-1);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    color: var(--accent);
+    letter-spacing: 1px;
+}
